@@ -10,6 +10,7 @@ int main(void) {
 	t_list* lista;
 	while (1) {
 		int cod_op = recibir_operacion(cliente_fd);
+		printf("Código de operación recibido: %d\n", cod_op);
 		switch (cod_op) {
 		case MENSAJE:
 			recibir_mensaje(cliente_fd);
